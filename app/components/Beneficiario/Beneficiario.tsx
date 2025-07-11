@@ -223,7 +223,7 @@ export default function Beneficiario({dependente, setInputsBeneficiario, childre
           value={cep}
         />
       </div>
-      {dependente && (
+      {!dependente && (
         <div className="campo">
         <label className="font-bold mr-1" htmlFor="plano">PLANO</label>
         <select id="plano" className="border-2 border-[var(--border)] rounded-md w-auto" onChange={(e) => setPlano(e.target.value)} value={plano}>
