@@ -16,6 +16,7 @@ export default function Home() {
   const [dependente, setDependente] = useState(false);
   const [dependentes, setDependentes] = useState(0);
   const [enviado, setEnviado] = useState(false);
+  const [carregando, setCarregando] = useState(false);
   const api_key = process.env.NEXT_PUBLIC_API_KEY;
 
   const [inputsDependentes, setInputsDependentes] = useState<
@@ -60,6 +61,7 @@ export default function Home() {
 
   const handleClick = () => {
     handleSubmit();
+    setCarregando(true);
   };
 
   const handleSubmit = async () => {
@@ -98,6 +100,7 @@ export default function Home() {
 
       if (resultado === "OK") {
         setEnviado(true);
+        setCarregando(false);
       } else {
         alert("Houve um problema ao enviar os dados.");
       }
@@ -189,6 +192,7 @@ export default function Home() {
             valid="enviar"
             onClick={handleClick}
             className="w-full sm:w-auto"
+            carregando={carregando}
           >
             ENVIAR
             <CircleCheck className="check ml-2" />
