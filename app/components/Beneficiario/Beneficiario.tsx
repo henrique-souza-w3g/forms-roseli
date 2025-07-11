@@ -223,15 +223,16 @@ export default function Beneficiario({dependente, setInputsBeneficiario, childre
           value={cep}
         />
       </div>
-      <div className="campo">
+      {dependente && (
+        <div className="campo">
         <label className="font-bold mr-1" htmlFor="plano">PLANO</label>
         <select id="plano" className="border-2 border-[var(--border)] rounded-md w-auto" onChange={(e) => setPlano(e.target.value)} value={plano}>
           <option value="">Escolha um plano</option>
           <option value="Dental 200 Doc - R$13,07">Dental 200 Doc - R$13,07</option>
           <option value="Dental E 300 - R$51,81">Dental E 300 - R$51,81</option>
         </select>
-
       </div>
+      )}
       {dependente && (
         <>
         <div className="campo">
