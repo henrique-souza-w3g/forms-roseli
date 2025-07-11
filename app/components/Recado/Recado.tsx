@@ -23,7 +23,13 @@ export default function Recado() {
             <li className="bg-[var(--bg-title)] text-white border-2 border-[var(--border)] rounded-md mx-2 p-1">👨‍👩‍👧‍👦 NETOS</li>
             <li className="bg-[var(--bg-title)] text-white border-2 border-[var(--border)] rounded-md mx-2 p-1">👨‍👩‍👧‍👦 TIOS</li>
           </ul>
-          
+        </div>
+        <div className="p-4 flex flex-col justify-center align-center font-medium">
+          <h3 className="text-xl font-bold text-white text-center mt-3 py-2 bg-[var(--bg-title)] rounded-md">SOBRE O PLANO</h3>
+          <ul className="flex flex-col mt-4 py-2 text-center md:grid md:grid-cols-2 gap-2">
+            <li className="bg-[var(--bg-title)] text-white border-2 border-[var(--border)] rounded-md mx-2 p-1">200 DOC - Rol (ANS) + Procedimentos Extras + Documentação Ortdôntica Básica</li>
+            <li className="bg-[var(--bg-title)] text-white border-2 border-[var(--border)] rounded-md mx-2 p-1">E 300 - Rol (ANS) + Procedimentos Extras + Ortodontia</li>
+          </ul>
         </div>
     </div>
   );

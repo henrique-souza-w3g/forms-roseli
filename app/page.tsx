@@ -60,7 +60,6 @@ export default function Home() {
 
   const handleClick = () => {
     handleSubmit();
-    setEnviado(true);
   };
 
   const handleSubmit = async () => {
@@ -98,7 +97,7 @@ export default function Home() {
       console.log("Resposta do Google Sheets:", resultado);
 
       if (resultado === "OK") {
-        alert("Dados enviados com sucesso!");
+        setEnviado(true);
       } else {
         alert("Houve um problema ao enviar os dados.");
       }
