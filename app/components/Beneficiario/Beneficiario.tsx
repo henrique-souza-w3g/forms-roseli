@@ -36,7 +36,7 @@ export default function Beneficiario({dependente, setInputsBeneficiario, childre
       bairro, cidade, estado, cep, plano, parentesco])
   return (
     <div id="beneficiario">
-      <p className="title text-center text-2xl font-bold p-2">{children}</p>
+      <p className="title text-center text-2xl font-bold p-2 rounded-md">{children}</p>
     <form id="beneficiario" className="grid gap-6 p-6 text-base w-full">
       {!dependente && (
         <div className="campo" id="empresa">
@@ -52,7 +52,6 @@ export default function Beneficiario({dependente, setInputsBeneficiario, childre
           <option value="">Escolha Sua Empresa</option>
           <option value="A Suissa">A Suissa</option>
           <option value="Casa das Alianças">Casa das Alianças</option>
-          <option value="OPTIMA">OPTIMA</option>
           <option value="PauliGold">PauliGold</option>
         </select>
       </div>
