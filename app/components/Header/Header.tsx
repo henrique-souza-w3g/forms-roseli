@@ -11,9 +11,9 @@ export default function Header() {
         height={150}
       />
       <div className="w-1 h-10 bg-white rounded-full"></div>
-      <Image src="/agro_reserva_logo.svg"
+      <Image src="/agro_reserva.jpg"
       alt="Logo Amil"
-      width={150}
+      width={200}
       height={100}
       className="" />
       </div>
