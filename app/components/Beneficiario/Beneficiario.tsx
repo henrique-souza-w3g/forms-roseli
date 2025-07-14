@@ -23,7 +23,7 @@ export default function Beneficiario({dependente, setInputsBeneficiario, childre
   const [cidade, setCidade] = useState('')
   const [estado, setEstado] = useState('')
   const [cep, setCep] = useState('')
-  const [plano, setPlano] = useState('')
+  const plano = "Prata - Enfermaria: Coparticipação com Limitadores: R$ 233,32";
   const [parentesco, setParentesco] = useState('')
 
 
@@ -205,16 +205,6 @@ export default function Beneficiario({dependente, setInputsBeneficiario, childre
           value={cep}
         />
       </div>
-      {!dependente && (
-        <div className="campo">
-        <label className="font-bold mr-1" htmlFor="plano">PLANO</label>
-        <select id="plano" className="border-2 border-[var(--border)] rounded-md w-auto" onChange={(e) => setPlano(e.target.value)} value={plano}>
-          <option value="">Escolha um plano</option>
-          <option value="Prata - Enfermaria: Coparticipação com Limitadores: R$ 233,32">Prata - Enfermaria: Coparticipação com Limitadores: R$ 233,32</option>
-          <option value="Limitadores de Coparticipação">Limitadores de Coparticipação</option>
-        </select>
-      </div>
-      )}
       {dependente && (
         <>
         <div className="campo">
