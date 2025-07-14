@@ -9,7 +9,7 @@ interface BeneficiarioProps {
 }
 
 export default function Beneficiario({dependente, setInputsBeneficiario, children}: BeneficiarioProps) {
-  const [empresa, setEmpresa] = useState('')
+  const empresa = "Agro Reserva";
   const [nome, setNome] = useState('')
   const [cpf, setCpf] = useState('')
   const [dataNascimento, setDataNascimento] = useState('')
@@ -36,27 +36,8 @@ export default function Beneficiario({dependente, setInputsBeneficiario, childre
       bairro, cidade, estado, cep, plano, parentesco])
   return (
     <div id="beneficiario">
-      <p className="title text-center text-2xl font-bold p-2">{children}</p>
+      <p className="title text-center text-2xl font-bold p-2 rounded-md">{children}</p>
     <form id="beneficiario" className="grid gap-6 p-6 text-base w-full">
-      {!dependente && (
-        <div className="campo" id="empresa">
-        <label htmlFor="empresa" className="font-bold mr-1">
-          EMPRESA
-        </label>
-        <select
-          id="empresa"
-          className="border-2 border-[var(--border)] rounded-md w-fit"
-          onChange={(e) => setEmpresa(e.target.value)}
-          value={empresa}
-        >
-          <option value="">Escolha Sua Empresa</option>
-          <option value="A Suissa">A Suissa</option>
-          <option value="Casa das Alianças">Casa das Alianças</option>
-          <option value="OPTIMA">OPTIMA</option>
-          <option value="PauliGold">PauliGold</option>
-        </select>
-      </div>
-      )}
       <div className="campo">
         <label className="font-bold mr-1" htmlFor="nome-titular">
           NOME COMPLETO
@@ -85,7 +66,7 @@ export default function Beneficiario({dependente, setInputsBeneficiario, childre
         />
       </div>
       <div className="campo">
-        <label className="font-bold mr-1" htmlFor="">
+        <label className="font-bold mr-1" htmlFor="dt-nasc-titular">
           DATA DE NASCIMENTO
         </label>
         <input
@@ -224,16 +205,16 @@ export default function Beneficiario({dependente, setInputsBeneficiario, childre
           value={cep}
         />
       </div>
-      {dependente && (
+      {!dependente && (
         <div className="campo">
         <label className="font-bold mr-1" htmlFor="plano">PLANO</label>
         <select id="plano" className="border-2 border-[var(--border)] rounded-md w-auto" onChange={(e) => setPlano(e.target.value)} value={plano}>
           <option value="">Escolha um plano</option>
-          <option value="Dental 200 Doc - R$13,07">Dental 200 Doc - R$13,07</option>
-          <option value="Dental E 300 - R$51,81">Dental E 300 - R$51,81</option>
+          <option value="Prata - Enfermaria: Coparticipação com Limitadores: R$ 233,32">Prata - Enfermaria: Coparticipação com Limitadores: R$ 233,32</option>
+          <option value="Limitadores de Coparticipação">Limitadores de Coparticipação</option>
         </select>
       </div>
-    )}
+      )}
       {dependente && (
         <>
         <div className="campo">
@@ -255,5 +236,3 @@ export default function Beneficiario({dependente, setInputsBeneficiario, childre
     </div>
   );
 }
-
-// voltando para o normal
