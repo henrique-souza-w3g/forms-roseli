@@ -20,4 +20,5 @@ export default function Header() {
       <h1 className="text-[1.5em] font-bold align-middle">Formulário de Adesão</h1>
     </header>
   );
+  
 }
