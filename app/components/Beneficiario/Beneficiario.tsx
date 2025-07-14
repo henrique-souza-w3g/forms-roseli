@@ -211,13 +211,8 @@ export default function Beneficiario({dependente, setInputsBeneficiario, childre
           <label className="font-bold mr-1" htmlFor="parentesco">PARENTESCO</label>
           <select id="parentesco" className="border-2 border-[var(--border)] rounded-md w-auto" onChange={(e) => setParentesco(e.target.value)} value={parentesco}>
             <option value="">Escolha um parentesco</option>
-            <option value="Pais">Pais</option>
-            <option value="Irmãos">Irmãos</option>
             <option value="Cônjuge">Cônjuge</option>
             <option value="Filhos">Filhos</option>
-            <option value="Sobrinhos">Sobrinhos</option>
-            <option value="Netos">Netos</option>
-            <option value="Tios">Tios</option>
           </select>
         </div>
         </>

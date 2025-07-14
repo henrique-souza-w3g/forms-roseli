@@ -7,13 +7,19 @@ export default function Header() {
         <Image
         src="/w3g_branco.png"
         alt="Logo W3G Branco"
-        width={150}
+        width={120}
         height={150}
       />
       <div className="w-1 h-10 bg-white rounded-full"></div>
       <Image src="/agro_reserva.jpg"
       alt="Logo Amil"
-      width={200}
+      width={150}
+      height={100}
+      className="" />
+      <div className="w-1 h-10 bg-white rounded-full"></div>
+      <Image src="/amil_logo.png"
+      alt="Logo Amil"
+      width={120}
       height={100}
       className="" />
       </div>

@@ -18,9 +18,8 @@ export default function Recado() {
         </div>
         <div className="p-4 flex flex-col justify-center align-center font-medium">
           <h3 className="text-xl font-bold text-white text-center mt-3 py-2 bg-[var(--bg-title)] rounded-md">SOBRE O PLANO</h3>
-          <ul className="flex flex-col mt-4 py-2 text-center md:grid md:grid-cols-2 gap-2">
-            <li className="bg-[var(--bg-title)] text-white border-2 border-[var(--border)] rounded-md mx-2 p-2">Prata - Enfermaria: Coparticipação com Limitadores: R$ 233,32</li>
-            <li className="bg-[var(--bg-title)] text-white border-2 border-[var(--border)] rounded-md mx-2 p-2">Limitadores de Coparticipação</li>
+          <ul className="flex flex-col mt-4 py-2 text-center gap-2">
+            <li className="bg-[var(--bg-title)] text-white border-2 border-[var(--border)] rounded-md mx-2 p-2">Prata - Enfermaria + Coparticipação</li>
           </ul>
           <h3 className="text-lg font-bold text-white text-center mt-3 py-2 bg-[var(--bg-title)] rounded-md">LIMITADORES DE COPARTICIPAÇÃO</h3>
             <ul className="flex flex-col mt-4 py-2 text-center md:grid md:grid-cols-3 gap-2">
