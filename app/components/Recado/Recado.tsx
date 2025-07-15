@@ -7,7 +7,7 @@ export default function Recado() {
           <h3 className="text-xl font-bold text-white text-center mt-3 py-2 bg-[var(--bg-title)] rounded-md ">POR QUE ADERIR?</h3>
           <ul className="flex flex-col mt-4 py-2 text-center md:grid md:grid-cols-2 gap-2">
             <li className="bg-[var(--bg-title)] text-white border-2 border-[var(--border)] rounded-md mx-2 p-1">✅<span className="font-bold">Cobertura completa:</span> <p>Internação, Pronto Socorro, Cirurgias, Exames, Consultas e Telemedicina</p></li>
-            <li className="bg-[var(--bg-title)] text-white border-2 border-[var(--border)] rounded-md mx-2 p-1">✅<span className="font-bold">Atendimento Nacional</span> <p>Mais de 5 mil opções de atendimento em SP</p></li>
+            <li className="bg-[var(--bg-title)] text-white border-2 border-[var(--border)] rounded-md mx-2 p-1">✅<span className="font-bold">Atendimento Nacional</span> <p>Muitas opções em todo Brasil</p></li>
             <li className="bg-[var(--bg-title)] text-white border-2 border-[var(--border)] rounded-md mx-2 p-1">✅<span className="font-bold">Totalmente Isendo de Carências:</span> <p>Já comece utilizando</p></li>
             <li className="bg-[var(--bg-title)] text-white border-2 border-[var(--border)] rounded-md mx-2 p-1">✅<span className="font-bold">Bem-Estar em Primeiro Lugar:</span> <p>Mais tranquilidade e cuidado com a sua saúde e da sua família</p></li>
           </ul>
