@@ -116,7 +116,7 @@ export default function Home() {
       <div className="w-full max-w-5xl p-2 sm:p-4 md:p-8 lg:p-10 bg-[var(--background)]/15 backdrop-blur-md shadow-2xl rounded-lg flex flex-col gap-4">
         <Header />
         <h2 className="text-xl sm:text-2xl md:text-3xl p-2 sm:p-4 border-b-2 border-[var(--border)] bg-[var(--bg-title)] text-center text-white font-bold rounded-t-md">
-          PLANO ODONTOLÓGICO
+          PLANO SAÚDE
         </h2>
         <Recado />
         <div className="bg-[var(--foreground)] border-2 border-[var(--border)] rounded-b-md p-2 sm:p-4 md:p-6 flex flex-col gap-4">
